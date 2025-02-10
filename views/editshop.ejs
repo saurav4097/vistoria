@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Product</title>
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+    <div class="container">
+        <div class="logo">VISTORIA</div>
+
+    <div class="login-box">
+        <h2>Edit Your Shop</h2>
+        <form action="/updateshop" method="POST">
+            <input type="hidden" name="shopId" value="<%= shop._id %>">
+            <div class="input-group">
+            <input type="text" id="shopname" name="shopname" value="<%= shop.shopname %>" required><br><br>
+            <label for="shopname">Shop Name:</label>
+        </div>
+            <div class="input-group">
+            <input type="text" id="location" name="location" value="<%= shop.location %>" required><br><br>
+            <label for="price">Price:</label>
+        </div>
+            
+            <input type="hidden" id="name" name="name" value="<%= shop.name %>" >
+            
+            
+            
+            <input type="hidden" id="email" name="email" value="<%= shop.email %>" >
+
+            <button type="submit" class="btn">Save Changes</button>
+        </form>
+    </div>
+</div>
+</body>
+</html>

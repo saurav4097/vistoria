@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/signup.css"> <!-- Path to the CSS file in the 'public' folder -->
+    <title>Sign Up</title>
+    <style>
+        /* Basic style for the error message */
+        .error-message {
+            color: red;
+            margin-top: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">VISTORIA</div>
+        <div class="login-box">
+            <h2>Sign Up</h2>
+            <form action="/signup" method="POST">
+                <!-- Username Input -->
+                <div class="input-group">
+                    <input type="text" id="username" name="username" required>
+                    <label for="username">Username</label>
+                </div>
+                <!-- Email Input -->
+                <div class="input-group">
+                    <input type="email" id="email" name="email" required>
+                    <label for="email">Email</label>
+                </div>
+                <!-- Password Input -->
+                <div class="input-group">
+                    <input type="password" id="password" name="password" required>
+                    <label for="password">Create Password</label>
+                </div>
+
+                <!-- Submit Button -->
+                <button type="submit" class="btn">Sign Up</button>
+
+                <!-- Display error message below the button -->
+                <% if (errorMessage) { %>
+                    <div class="error-message">
+                        <p><%= errorMessage %></p>
+                    </div>
+                <% } %>
+            </form>
+            
+            <div class="signup-text">
+                <p>Already have an account? <a href="signin">Login</a></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

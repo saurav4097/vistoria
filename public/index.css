@@ -1,0 +1,386 @@
+*{
+    padding:0;
+    margin:0;
+}
+.bar1{
+    width: 100vw;
+   
+    background:rgb(222, 116, 22);
+    height:70px;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    
+    p{padding-left: 20px;
+        font-size:3rem;
+        padding-right:50px;
+        
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif}
+    a{
+        padding-right: 50;
+        min-width: 100px;
+        max-width: 120px;
+    }
+}
+.profile{
+    margin-left:100px;
+    margin-right: 20px;
+}
+.cart{
+    margin-left:20px;
+    margin-right: 40px; 
+}
+.navsearchbar{
+  
+height: 50px;
+width: 700px;
+font-size: 1rem;
+display: flex;
+
+}
+.searchbar{
+    width: 50px;
+    font-size: 1.1rem;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border: none;
+    background-color: rgb(196, 200, 203);
+}
+.searchinput{
+    width: 605px;
+    border: none;
+    font-size: 1rem;
+}
+.searchicon{
+background-color: rgb(62, 59, 59);
+width: 45px;
+border: none;
+border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    display: flex;
+    background-size: cover;
+}
+.bar2{
+    background-color: rgb(45, 46, 45);
+    color:white;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+    a{margin-right: 100px;}
+    .menubar{margin-left: 10px;margin-right: 110px;}
+}
+
+
+
+
+
+
+
+.bar31{
+    background-image: url("images/backgroundlogin.jpeg");
+    background-size: cover;
+    height: 780px;
+    display: flex;
+padding-left: 35px;
+}
+
+.box1{
+    padding-top: 1px; /* Adds space inside instead of using margin */
+    border-radius: 5px;
+    height: 450px;
+    width: 320px;
+    margin-top: 320px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color:white;
+    pre{font-size: 1rem;
+        font-weight: bolder;
+        display: flex;
+        margin-top: 20px;
+       margin-left: 20px;
+    height: 60px;}
+    .image31{
+        
+        margin-top: 40px;
+        height: 310px;
+        width: 280px;
+        margin-left: 20px;
+        margin-right: 20px;
+        background-size: cover;
+       /* Ensures the image fills the space */
+        background-position: center;
+        background-repeat: no-repeat;
+        display: block;
+    }
+
+    p{margin-top: 10px; display: flex ;justify-content: center; color: rgb(6, 6, 6); }
+    h1{margin-top: 20px; display: flex ;justify-content: center; color: rgb(10, 10, 11);}
+}
+.shop-link {
+    text-decoration: none; /* Removes underline */
+    color: inherit; /* Keeps text color same as parent */
+    display: block; /* Ensures the entire div is clickable */
+  }
+  
+  .shop-link h1, .shop-link p {
+    text-decoration: none; /* Ensures text inside remains without underline */
+    color: inherit; /* Keeps text color unchanged */
+  }
+  
+
+.bar32{
+    overflow-x:scroll;
+    background-color: rgb(246, 250, 249);
+    height: 350px;
+    width: 1400px;
+   display:flex;
+padding-left: 35px;
+
+}
+.box2{
+    border-radius: 5px;
+    height: 300px;
+    min-width: 500px;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    
+    background-size: cover;
+}
+       /* General Page Styling */
+       body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f5f5f5;
+    }
+    
+    /* Product Grid */
+    .product-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 20px;
+        padding: 40px;
+        justify-content: center;
+    }
+    
+    /* Product Card */
+    .product-card {
+        position: relative;
+        background: white;
+        border-radius: 10px;
+        overflow: hidden;
+        cursor: pointer;
+        transition: 0.3s;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    .product-card:hover {
+        box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+    }
+    
+    /* Product Link (Make Entire Card Clickable) */
+    .product-link {
+        text-decoration: none;
+        color: inherit;
+        display: block;
+    }
+    
+    /* Product Image */
+    .product-image {
+        width: 100%;
+        height: 300px;
+        background-size: cover;
+        background-position: center;
+    }
+    
+    /* Product Details */
+    .product-details {
+        padding: 15px;
+        text-align: center;
+    }
+    
+    .product-details h3 {
+        font-size: 1.2rem;
+        font-weight: bold;
+        margin: 5px 0;
+    }
+    
+    .product-details .offer {
+        color: red;
+        font-weight: bold;
+    }
+    
+    /* Add to Bag Button */
+    .add-to-bag {
+        position: absolute;
+        bottom: -50px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #ff3f6c;
+        color: white;
+        border: none;
+        padding: 12px 20px;
+        font-size: 1rem;
+        cursor: pointer;
+        border-radius: 20px;
+        transition: 0.3s;
+        opacity: 0;
+    }
+    
+    /* Hover Effect - Show Button */
+    .product-card:hover .add-to-bag {
+        bottom: 20px;
+        opacity: 1;
+    }
+    
+            
+.bar33see_more{
+    background-color: rgb(55, 159, 238);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top:10px;
+    margin-bottom:40px;
+    margin-left:60px;
+    margin-right:60px;
+    height: 65px;
+    font-weight: lighter;
+    color: aliceblue;
+}
+
+.explore-link {
+    font-family: 'Playfair Display', serif; /* Adds a premium look */
+    font-size: 1.8rem; /* Increases font size */
+    text-decoration: none; /* Removes underline */
+    color: white; /* Keeps it white */
+    font-weight: bold;
+    transition: all 0.3s ease-in-out; /* Smooth hover effect */
+    border-bottom: 2px solid transparent; /* Ensures no underline but can add hover effect */
+}
+
+.explore-link:hover {
+    color: gold; /* Changes color on hover */
+    border-bottom: 2px solid gold; /* Adds a subtle underline on hover */
+}
+.bar33category_wise{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top:40px;
+    margin-bottom:20px;
+    margin-left:60px;
+    margin-right:60px;
+    height: 50px;
+    font-size: 30px;
+    font-weight: lighter;
+    color: rgb(13, 92, 160);
+}
+.box3{
+
+    border-radius: 0px;
+    height: 239px;
+    width: 170px;
+    margin-top: 11px;
+    margin-left: 11px;
+    margin-right: 11px;
+    margin-bottom: 20px;
+    background-image: url("images/background.jpg");
+    .image33{
+        margin-top: 5px;
+        margin-left: 5px;
+        margin-right: 5px;
+        height: 160px;
+        width: 160px;
+        background-size: cover;
+    }
+    p{display: flex;
+    justify-content: center;
+font-weight: bold;
+font-size: 1rem;
+margin-top: 3px;}
+a{display: flex;
+    font-size: 1.2rem;
+    justify-content: center;
+font-weight: bolder;
+margin-top: 3px;}
+b{display: flex;
+    justify-content: center;
+    font-size: 1rem;
+font-weight: bold;
+margin-top: 3px;}
+}
+
+
+.bar4{
+    height: 510px;
+    background-color: rgb(32, 44, 37);
+    color: aliceblue;
+    .backtotop{
+        height: 80px;margin-top: 100px;
+        display: flex;
+        justify-content: center;
+        padding-top: 5px;
+        background-color: rgb(50, 77, 63);
+        font-size: 2rem;
+    }
+    .extra{
+        display: flex;
+        padding-left: 40px;
+        font-size: 14px;
+        pre{
+            margin-top: 80px;
+            margin-left: 140px;
+            a{font-weight: bolder;}
+        }
+    }
+    .last{
+        margin-top: 70px;
+        display: flex;
+        justify-content: center;
+        font-size: 3rem;
+        color: rgb(251, 250, 250);
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    .last2{
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        font-size: 0.7rem;
+        color: white;
+       
+    }
+}
+
+/* Circular Box Styling */
+.circular-box {
+    position: absolute; /* Adjust position as per your layout needs */
+    top: 100px; /* Adjust as needed */
+    right: 20px; /* Adjust as needed */
+    width: 100px; /* Width of the circular box */
+    height: 120px; /* Height of the circular box */
+    background-color: #ff5733; /* Background color of the circle */
+    border-radius: 20px; /* Rounded corners (if you want the box slightly rounded) */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Add some shadow for effect */
+    z-index: 1001; /* Ensure it's above other elements */
+    display: flex; /* Flex to center content */
+    flex-direction: column; /* Align icon on top and text below */
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    color: white; /* Text color */
+}
+
+.circular-box svg {
+    width: 40px; /* Adjust icon size */
+    height: 40px; /* Adjust icon size */
+}
+
+.circular-box h3 {
+    margin-top: 10px; /* Space between icon and text */
+    font-size: 12px; /* Smaller text */
+    font-weight: 400; /* Optional, to make the text lighter */
+    text-align: center;
+}

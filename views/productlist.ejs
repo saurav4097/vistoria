@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VISTORIA</title>
+    <style>
+        *{
+            padding:0;
+            margin:0;
+        }
+        .bar1{
+            width: 100vw;
+           
+            background:rgb(222, 116, 22);
+            height:70px;
+            display: flex;
+            align-items: center;
+            padding-left: 20px;
+            
+            p{padding-left: 20px;
+                font-size:3rem;
+                padding-right:50px;
+                
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif}
+            a{
+                padding-right: 50;
+                min-width: 100px;
+                max-width: 120px;
+            }
+        }
+        .profile{
+            margin-left:40px;
+            margin-right: 20px;
+        }
+        .cart{
+            margin-left:20px;
+            margin-right: 40px; 
+        }
+        .navsearchbar{
+          
+        height: 50px;
+        width: 700px;
+        font-size: 1rem;
+        display: flex;
+        
+        }
+        .searchbar{
+            width: 50px;
+            font-size: 1.1rem;
+            border-top-left-radius: 4px;
+            border-bottom-left-radius: 4px;
+            border: none;
+            background-color: rgb(196, 200, 203);
+        }
+        .searchinput{
+            width: 605px;
+            border: none;
+            font-size: 1rem;
+        }
+        .searchicon{
+        background-color: rgb(62, 59, 59);
+        width: 45px;
+        border: none;
+        border-top-right-radius: 4px;
+            border-bottom-right-radius: 4px;
+            display: flex;
+            background-size: cover;
+        }
+        .bar2{
+            background-color: rgb(45, 46, 45);
+            color:white;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            padding-left: 30px;
+            a{margin-right: 100px;}
+            .menubar{margin-left: 10px;margin-right: 110px;}
+        }
+        
+        
+        
+        
+        
+        
+        
+        .bar31{
+            background-image: url("images/backgroundlogin.jpeg");
+            background-size: cover;
+            height: 780px;
+            display: flex;
+        padding-left: 35px;
+        }
+        .box1{
+            border-radius: 5px;
+            height: 450px;
+            width: 320px;
+            margin-top: 320px;
+            margin-left: 10px;
+            margin-right: 10px;
+            background-color: white;
+            pre{font-size: 1rem;
+                font-weight: bolder;
+                display: flex;
+                margin-top: 20px;
+               margin-left: 20px;
+            height: 60px;}
+            .image31{
+                height: 310px;
+                width: 280px;
+                margin-left: 20px;
+                margin-right: 20px;
+                background-size: cover;
+            }
+            p{margin-top: 20px; margin-left: 20px; color: blue;}
+        }
+        
+        .bar32{
+            overflow-x:scroll;
+            background-color: rgb(246, 250, 249);
+            height: 350px;
+            width: 1400px;
+           display:flex;
+        padding-left: 35px;
+        
+        }
+        .box2{
+            border-radius: 5px;
+            height: 300px;
+            min-width: 500px;
+            margin-top: 20px;
+            margin-left: 10px;
+            margin-right: 10px;
+            
+            background-size: cover;
+        }
+        /* General Page Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+/* Product Grid */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 40px;
+    justify-content: center;
+}
+
+/* Product Card */
+.product-card {
+    position: relative;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.product-card:hover {
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Product Link (Make Entire Card Clickable) */
+.product-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+/* Product Image */
+.product-image {
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Product Details */
+.product-details {
+    padding: 15px;
+    text-align: center;
+}
+
+.product-details h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+.product-details .offer {
+    color: red;
+    font-weight: bold;
+}
+
+/* Add to Bag Button */
+.add-to-bag {
+    position: absolute;
+    bottom: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #ff3f6c;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: 0.3s;
+    opacity: 0;
+}
+
+/* Hover Effect - Show Button */
+.product-card:hover .add-to-bag {
+    bottom: 20px;
+    opacity: 1;
+}
+
+        
+        .bar4{
+            height: 510px;
+            background-color: rgb(32, 44, 37);
+            color: aliceblue;
+            .backtotop{
+                height: 80px;margin-top: 100px;
+                display: flex;
+                justify-content: center;
+                padding-top: 5px;
+                background-color: rgb(50, 77, 63);
+                font-size: 2rem;
+            }
+            .extra{
+                display: flex;
+                padding-left: 40px;
+                font-size: 14px;
+                pre{
+                    margin-top: 80px;
+                    margin-left: 140px;
+                    a{font-weight: bolder;}
+                }
+            }
+            .last{
+                margin-top: 70px;
+                display: flex;
+                justify-content: center;
+                font-size: 3rem;
+                color: rgb(251, 250, 250);
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            }
+            .last2{
+                margin-top: 20px;
+                display: flex;
+                justify-content: center;
+                font-size: 0.7rem;
+                color: white;
+               
+            }
+        }
+        
+        /* Circular Box Styling */
+        .circular-box {
+            position: fixed; /* Adjust position as per your layout needs */
+            top: 100px; /* Adjust as needed */
+            left: 20px; /* Adjust as needed */
+            width: 60px; /* Width of the circular box */
+            height: 40px; /* Height of the circular box */
+            
+            border-radius: 20px; /* Rounded corners (if you want the box slightly rounded) */
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Add some shadow for effect */
+            z-index: 1001; /* Ensure it's above other elements */
+            display: flex; /* Flex to center content */
+            flex-direction:column; /* Align icon on top and text below */
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+            color: rgb(18, 14, 14); /* Text color */
+        }
+        
+        .circular-box svg {
+            width: 40px; /* Adjust icon size */
+            height: 40px; /* Adjust icon size */
+        }
+        
+        .circular-box h3 {
+            margin-top: 10px; /* Space between icon and text */
+            font-size: 12px; /* Smaller text */
+            font-weight: 400; /* Optional, to make the text lighter */
+            text-align: center;
+        }
+        
+    </style>
+</head>
+<body>
+    <!--bar 1**********************************************************-->
+   <div class="bar1">
+    <p>VISTORIA*</p>
+    
+    <div class="navsearchbar">
+        <select class="searchbar">
+            <option>All</option>
+        </select>
+        <!-- Updated input to include an id -->
+        <input id="searchInput" placeholder="search MyBag" class="searchinput">
+        <button class="searchicon" onclick="search()">
+            <h1>🔍</h1>
+        </button>
+    </div>
+    
+    <!-- Profile Section -->
+<div class="profile">
+    <a href="/profile"> <!-- Wrap the icon with an anchor tag that links to the signup page -->
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+            <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
+        </svg>
+    </a>
+</div>
+<div class="cart">
+    <a href="/cart"> 
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+  </svg></a></div>
+    <!--bar 2**********************************************************-->
+   </div> 
+   <div class="circular-box" >
+    <a href="/">
+    <<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-arrow-left-square-fill" viewBox="0 0 16 16">
+        <path d="M16 14a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2zm-4.5-6.5H5.707l2.147-2.146a.5.5 0 1 0-.708-.708l-3 3a.5.5 0 0 0 0 .708l3 3a.5.5 0 0 0 .708-.708L5.707 8.5H11.5a.5.5 0 0 0 0-1"/>
+      </svg>
+    </a>
+      
+</div>
+<!--bar 3**********************************************************-->
+<div class="product-grid">
+    <% if (products && products.length > 0) { %>
+        <% products.forEach(product => { %>
+            <div class="product-card">
+                <a href="/product/<%= product._id %>" class="product-link">
+                    <div class="product-image" style='background-image: url("data:image/jpeg;base64,<%= product.images[0] %>");'></div>
+                    <div class="product-details">
+                        <h3><%= product.name %></h3>
+                        <p class="offer"><%= product.offer %>% OFF</p>
+                    </div>
+                    <button class="add-to-bag" data-id="<%= product._id %>">Add to Bag</button>
+                </a>
+            </div>
+        <% }) %>
+    <% } else { %>
+        <p>No products available</p>
+    <% } %>
+</div>
+
+<!--bar 3**********************************************************-->
+<div class="bar4">
+    <div class="backtotop">
+        <pre>     ^
+Back To Top</pre>
+        </div>
+    <div class="extra">
+    <pre><a>Get to Know Us</a>
+About Us
+Careers
+Press Releases
+Amazon Science</pre>
+        <pre><a>Connect with Us</a>
+Facebook
+Twitter
+Instagram</pre>
+            <pre><a>Make Money with Us</a>
+Sell on Amazon
+Sell under Amazon Accelerator
+ Protect and Build Your Brand
+Amazon Global Selling
+Become an Affiliate
+Fulfilment by Amazon
+Advertise Your Products
+Amazon Pay on Merchants</pre>
+                <pre><a>Let Us Help You</a>
+COVID-19 and Amazon
+Your Account
+Returns Centre
+Recalls and Product Safety Alerts
+100% Purchase Protection
+Amazon App Download
+Help</pre>
+</div>
+<div class="last">
+    <p>MyBag*</p>
+</div>
+<div class="last2">
+    <pre>   Thank you for being our valued customer.
+ We are so grateful and hope we met your expectations. </pre>
+</div>
+</div>
+<script>
+
+        // Function to show the popup message
+        function showPopupMessage(message) {
+            alert(message); // This is a simple way to show a popup message
+        }
+
+        window.onload = function() {
+            // Check if there's a message in the URL
+            const urlParams = new URLSearchParams(window.location.search);
+            const message = urlParams.get('message');
+            
+            // If the message exists, show the popup
+            if (message) {
+                showPopupMessage(decodeURIComponent(message));
+            }
+        };
+
+        // Search function to redirect based on the search query
+        function search() {
+            // Get the search input value
+            var query = document.getElementById("searchInput").value;
+
+            // Check if the search query is not empty
+            if (query.trim() !== "") {
+                // Redirect to a new page (for example, a search results page)
+                window.location.href = "/search?query=" + encodeURIComponent(query);
+            } else {
+                // Optionally show an alert or take some other action if no input is provided
+                alert("Please enter a search term.");
+            }
+        }
+   
+    // Add to Cart button click handler
+    document.querySelectorAll('.add-to-bag').forEach(button => {
+        button.addEventListener('click', function () {
+            const productId = this.getAttribute('data-id');
+            
+            // Send AJAX request to add product to cart
+            fetch('/add-to-cart/' + productId, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ productId: productId }),
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    alert('Product added to cart!');
+                    // Optionally, update cart UI elements, like cart count
+                } else {
+                    alert('Failed to add product to cart');
+                }
+            })
+            .catch(error => console.error('Error:', error));
+        });
+    });
+</script>
+</body>
+</body>
+</html>

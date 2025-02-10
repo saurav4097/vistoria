@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VISTORIA</title>
+    <style>
+         /* General Styles */
+         body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+          }
+          
+          /* Bar 1 - Top Navigation */
+          .bar1 {
+            background:rgb(222, 116, 22);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            
+            padding: 10px 20px;
+            border-bottom: 1px solid #ddd;
+          }
+          
+          .bar1 p {
+            font-family: 'Poppins', sans-serif;
+            font-size: 24px;  /* Adjust size as per design */
+            font-weight: 600;  /* Semi-bold for Nykaa style */
+            text-transform: uppercase;  /* Nykaa often uses uppercase */
+            letter-spacing: 2px;  /* Slight spacing for premium feel */
+            color: #333;  /* Dark grey for a clean look */
+            margin: 10px 0;
+          }
+          
+         
+          /* Bar 2 - Go Back Button */
+          .bar.second-bar {
+            background-color: #f8f9fa;
+            padding: 10px 20px;
+            border-bottom: 1px solid #ddd;
+          }
+          
+          .back-button {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+          }
+          
+          .back-button:hover {
+            background-color: #0056b3;
+          }
+          
+    
+    
+          .bar31 {
+            background-image: url("/images/Luxury_Sector.jpg");
+            background-size: cover;
+            background-position: center;
+            height: 280px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        
+        .user-detail {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .user-detail .name {
+            font-size: 2.5rem; /* Big size for h1 */
+            font-weight: bold;
+            color: white;
+            margin: 0; /* Remove default margin */
+        }
+        
+        .user-detail .email {
+            font-size: 1.5rem; /* Medium size for p */
+            color: white;
+            margin-top: 10px; /* Space between h1 and p */
+        }
+        
+/* General Page Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+/* Product Grid */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 40px;
+    justify-content: center;
+}
+
+/* Product Card */
+.product-card {
+    position: relative;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.product-card:hover {
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Product Link (Make Entire Card Clickable) */
+.product-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+/* Product Image */
+.product-image {
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Product Details */
+.product-details {
+    padding: 15px;
+    text-align: center;
+}
+
+.product-details h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+.product-details .offer {
+    color: red;
+    font-weight: bold;
+}
+
+/* Add to Bag Button */
+.add-to-bag {
+    position: absolute;
+    bottom: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #ff3f6c;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: 0.3s;
+    opacity: 0;
+}
+
+/* Hover Effect - Show Button */
+.product-card:hover .add-to-bag {
+    bottom: 20px;
+    opacity: 1;
+}
+
+          
+        
+          .bar4 {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+          }
+          
+          .bar4 .backtotop {
+            text-align: center;
+            margin-bottom: 20px;
+          }
+          
+          .bar4 .backtotop pre {
+            color: #007bff;
+            cursor: pointer;
+          }
+          
+          .bar4 .extra pre {
+            margin: 0;
+            color: white;
+          }
+          
+          .bar4 .extra a {
+            color: #007bff;
+            text-decoration: none;
+          }
+          
+          .bar4 .last {
+            text-align: center;
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin: 20px 0;
+          }
+          
+          .bar4 .last2 pre {
+            text-align: center;
+            color: #ddd;
+          }
+          
+          /* Responsive Design */
+          @media (max-width: 768px) {
+            .navsearchbar {
+              flex-direction: column;
+            }
+          
+            .boxx21 {
+              width: 100%;
+            }
+          }
+  
+  
+  
+ 
+  
+    </style>
+</head>
+<body>
+   
+    <div class="bar1">
+        <p>VISTORIA*</p>
+        
+       </div> 
+       <div class="bar second-bar">
+        <button class="back-button" onclick="window.location.href='/'">Go Back</button>
+    </div>
+          
+        <!---profile of  shop----------------------------------------------------------->
+        <div class="bar31" >
+         
+            <div class="user-detail">
+              <h1 class="name"> <span><%= shop.shopname%></span></h1>
+                <p class="email">at  <span><%=shop.location%></span></p>
+            
+          </div>
+        </div>
+       
+        <div class="product-grid">
+            <% if (products && products.length > 0) { %>
+                <% products.forEach(product => { %>
+                    <div class="product-card">
+                        <a href="/product/<%= product._id %>" class="product-link">
+                            <div class="product-image" style='background-image: url("data:image/jpeg;base64,<%= product.images[0] %>");'></div>
+                            <div class="product-details">
+                                <h3><%= product.name %></h3>
+                                <p class="offer"><%= product.offer %>% OFF</p>
+                            </div>
+                            <button class="add-to-bag" data-id="<%= product._id %>">Add to Bag</button>
+                        </a>
+                       
+                        
+                    </div>
+                <% }) %>
+            <% } else { %>
+                <p>No products available</p>
+            <% } %>
+        </div>
+        
+    
+            
+    <!--bar 3**********************************************************-->
+    <div class="bar4">
+        <div class="backtotop">
+            <pre>     ^
+    Back To Top</pre>
+            </div>
+        <div class="extra">
+        <pre><a>Get to Know Us</a>
+    About Us
+    Careers
+    Press Releases
+    Amazon Science</pre>
+            <pre><a>Connect with Us</a>
+    Facebook
+    Twitter
+    Instagram</pre>
+                <pre><a>Make Money with Us</a>
+    Sell on Amazon
+    Sell under Amazon Accelerator
+     Protect and Build Your Brand
+    Amazon Global Selling
+    Become an Affiliate
+    Fulfilment by Amazon
+    Advertise Your Products
+    Amazon Pay on Merchants</pre>
+                    <pre><a>Let Us Help You</a>
+    COVID-19 and Amazon
+    Your Account
+    Returns Centre
+    Recalls and Product Safety Alerts
+    100% Purchase Protection
+    Amazon App Download
+    Help</pre>
+    </div>
+    <div class="last">
+        <p>MyBag*</p>
+    </div>
+    <div class="last2">
+        <pre>   Thank you for being our valued customer.
+     We are so grateful and hope we met your expectations. </pre>
+    </div>
+    </div>
+    <script>
+      // Add to Cart button click handler
+      document.querySelectorAll('.add-to-bag').forEach(button => {
+          button.addEventListener('click', function () {
+              const productId = this.getAttribute('data-id');
+              
+              // Send AJAX request to add product to cart
+              fetch('/add-to-cart/' + productId, {
+                  method: 'POST',
+                  headers: {
+                      'Content-Type': 'application/json',
+                  },
+                  body: JSON.stringify({ productId: productId }),
+              })
+              .then(response => response.json())
+              .then(data => {
+                  if (data.success) {
+                      alert('Product added to cart!');
+                      // Optionally, update cart UI elements, like cart count
+                  } else {
+                      alert('Failed to add product to cart');
+                  }
+              })
+              .catch(error => console.error('Error:', error));
+          });
+      });
+  </script>
+</body>
+</html>

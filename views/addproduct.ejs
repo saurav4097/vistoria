@@ -1,0 +1,109 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/signup.css"> <!-- Path to the CSS file in the 'public' folder -->
+    <title>Add Product</title>
+    <style>.input-group {
+      position: relative;
+      margin-bottom: 20px;
+      background: transparent;
+    }
+    
+    .input-group textarea {
+      margin-top: 7px;
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      color: gold; /* Golden text color */
+      
+      background: transparent;
+    
+      border: none;
+      border-bottom: 2px solid gold; /* Golden bottom border */
+      outline: none;
+      resize: none; /* Disable resizing */
+    }
+    
+    .input-group textarea:focus {
+      background: transparent;
+      border-bottom: 2px solid rgb(250, 185, 22); /* Slightly darker golden color when focused */
+    }
+    
+    .input-group label {
+      position: absolute;
+      top: 50%;
+      left: 10px;
+      transform: translateY(-50%);
+      color: gold; /* Golden label color */
+      pointer-events: none;
+      transition: 0.3s ease-in-out;
+      background: transparent;
+    }
+    
+    .input-group textarea:focus + label,
+    .input-group textarea:not(:placeholder-shown) + label {
+      top: 0;
+      font-size: 12px;
+      color: rgb(241, 180, 26); /* Change label color when focused */
+      background: transparent;
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">VISTORIA</div>
+        <div class="login-box">
+            <h2>Add Product</h2>
+            <form action="/addproduct" method="POST"  enctype="multipart/form-data">
+                <!-- Username Input -->
+                <div class="input-group">
+                    <input type="text" id="name" name="name" required>
+                    <label for="name">Product Name:</label>
+                </div>
+               
+                <!-- price -->
+                <div class="input-group">
+                    <input type="number" id="price" name="price" required>
+                    <label for="price">Price:</label>
+                </div>
+             
+                <!-- offer -->
+                <div class="input-group">
+                    <input type="text" id="offer" name="offer" >
+                    <label for="offer">Offer:</label>
+                </div>
+                
+                <!-- detail -->
+                <div class="input-group">
+                  <textarea id="detail" rows="4"  name="detail"   required ></textarea>
+                  <label for="detail">Detail:</label>
+              </div>
+               <!-- product images -->
+              <div class="input-group">
+                <input type="file" id="productImages" name="productImages" accept="image/*" multiple required>
+                <label for="productImages">Upload 3 Images:</label>
+              </div>
+
+                <!-- Submit Button -->
+                <button type="submit" class="btn">Add Product</button>
+
+               
+               
+            </form>
+            
+            
+        </div>
+    </div>
+</body>
+</html>
+
+
+    
+    
+
+    
+   
+   
